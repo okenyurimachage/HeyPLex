@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      {% load static %}
+    <meta charset="utf-8">
+
+    <title>HeyPlex Vehicle Rental</title>
+    <link rel="icon" href="{%  static 'assets/images/pic2.png' %}" type="image/png" sizes="16x16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HeyPlex Vehicle Rental">
+    <meta name="keywords" content="HeyPlex Vehicle Rental">
+    <link href="{%  static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{%  static 'assets/css/animate.css' %}"> <!-- Resource style -->
+    <link rel="stylesheet" href="{%  static 'assets/css/owl.carousel.css' %}">
+{#      <link rel="stylesheet" href="{%  static 'mdb/css/mdb.min.css' %}"/>#}
+{#    <link rel="stylesheet" href="{%  static 'fontawesome/css/fontawesome.min.css' %}"/>#}
+    <link rel="stylesheet" href="{%  static 'assets/css/owl.theme.css' %}">
+      <link rel="stylesheet" href="{%  static 'ionicons/css/ionicons.min.css' %}"/>
+{#    <link rel="stylesheet" href="{%  static 'assets/css/ionicons.min.css' %}"> <!-- Resource style -->#}
+    <link href="{% static 'assets/css/style.css ' %}" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="container">
+          <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+              <a class="navbar-brand page-scroll" href=" "><img src="{%  static 'assets/images/pic2.png' %}" width="40" height="40" alt="HeyPlex" />HeyPlex</a>
+              </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a class="page-scroll" href="#main">Home</a></li>
+                    <li><a class="page-scroll" href="#features">Offers</a></li>
+                    <li><a class="page-scroll" href="#review-section">Reviews</a></li>
+                    <li><a class="page-scroll" href="#pricing">Rental Terms</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Book now
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="{% url 'login' %}">Log in</a><br><br>
+                          <a class="dropdown-item" href="#">Sign up</a>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+          </div>
+        </nav><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <div class="main product" id="main"><!-- Main Section-->
+      <div class="hero-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-responsive wow fadeInLeft" src="{%  static 'assets/images/Car19.png' %}" alt="Hero Image" />
+            </div>
+            <div class="col-md-6">
+              <div class="hero-content">
+                <h1 class="wow fadeInUp" data-wow-delay="0s">Wireless Bluetooth Speakers of tomorrow</h1>
+                <p class="wow fadeInUp" data-wow-delay="0.2s">
+                  Beoplay A1 bluetooth speakers image on the left is owned by Bang and Olufsen and is released under creative
+                  commons lisence. So, I downloaded it and displayed it here in my demo.
+                </p>
+                <a class="btn btn-primary btn-action popup wow fadeInUp" data-wow-delay="0.2s" href="#">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about text-center">
+        <div class="container">
+          <div class="about-content">
+            <h2 class="wow fadeInUp" data-wow-delay="0.1s">"Best in class bluetooth speaker in the market.Though A1 has smooth round edges it is built with the
+              cutting edge technology."
+            </h2>
+            <h3 class="wow fadeInUp" data-wow-delay="0.2s">- The Verge</h3>
+          </div>
+        </div>
+      </div>
+
+      <div id="features" class="features">
+       <div class="container">
+         <div class="features-inner">
+           <div class="row">
+             <div class="col-md-6">
+               <img class="img-responsive wow fadeIn" src="{%  static 'assets/images/car15.png' %}" alt="Features" />
+             </div>
+             <div class="col-md-6">
+               <div class="features-list">
+                 <h1 class="wow fadeInUp" data-wow-delay="0.1s">Our special offers</h1>
+                 <ul class="wow fadeInUp" data-wow-delay="0.2s">
+                   <li>Variety of vehicle models to choose from</li>
+                   <li>Low renting rates</li>
+                   <li>24/7 booking services</li>
+                   <li>Insurances and taxes are catered for</li>
+                   <li>No hidden costs</li>
+                   <li>Five star rated services</li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+
+      <div class="feature-sub">
+        <div class="container">
+          <div class="sub-inner">
+            <h1 class="wow fadeInUp" data-wow-delay="0.1s">With A1 when you Play the music you'll feel the rhythm of heavens passing through chimes of your freedom.</h1>
+            <a href="#" class="btn btn-action fadeIn">Buy now</a>
+          </div>
+        </div>
+      </div>
+
+
+        <div id="review-section" class="review-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="reviews owl-carousel owl-theme">
+                  <div class="review-single"><img class="img-circle" src="{%  static 'assets/images/wo2.jpg' %}" alt="Client Testimonoal" />
+                    <div class="review-text wow fadeInDown" data-wow-delay="0.2s">
+                      <p>Easy to use system to get great price on rental cars. I've used it for 6 trips, no issues in booking, picking up or returning car.
+                          The price quoted is always what I pay.
+                          Highly recommend using HeyPlex if you need to rent a car for a day or weeks.</p>
+                      <h3>- Hanifa Kut</h3>
+                      <h3>Kiamunyi Resident</h3>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                    </div>
+                  </div>
+                  <div class="review-single"><img class="img-circle" src="{%  static 'assets/images/ma.png' %}" alt="Client Testimonoal" />
+                    <div class="review-text">
+                      <p>Saved me a lot of money when I first booked through them. They came back a few weeks later with more savings from the same rental company.
+                          I wish I had found HeyPlex years ago.</p>
+                      <h3>- Omar Bashir</h3>
+                      <h3>Pipeline Resident</h3>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-ios-star-half"></i>
+                    </div>
+                  </div>
+                  <div class="review-single"><img class="img-circle" src="{%  static 'assets/images/wo4.jpg' %}" alt="Client Testimonoal" />
+                    <div class="review-text">
+                      <p>We have a large family of 7. Rental cars to accommodate us are very expensive and put a big dent in our vacation savings.
+                          I was pleasantly surprised to find a deal for a caravan for over twenty thousand shillings less on your site.
+                          I must admit, I was so nervous when we went to pick up the car, hoping that are pre-paid reservation was legit.
+                          IT WAS!!! Thank you HeyPlex!!!</p>
+                      <h3>- Alice Wambui</h3>
+                      <h3>Eveready Resident</h3>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-ios-star-half"></i>
+                    </div>
+                  </div>
+                  <div class="review-single"><img class="img-circle" src="{%  static 'assets/images/ma2.jpg' %}" alt="Client Testimonoal" />
+                    <div class="review-text">
+                      <p>I rent cars frequently and always save with HeyPlex. Not only do they save me bunches, everyone is so kind and helpful.
+                          I often have specific requests.
+                          HeyPlex is always able to help. Just ask and you will be respectfully helped. HeyPlex is the best!!!!!</p>
+                      <h3>- Robert Ochieng</h3>
+                      <h3>Lanet Resident</h3>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                      <i class="ion ion-star"></i>
+                    </div>
+                  </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <div id="pricing" class="pricing">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="pricing-content">
+                <h1 class="wow fadeInUp" data-wow-delay="0.1s">A1 Bluetooth Speakers</h1>
+                <h4 class="wow fadeInUp" data-wow-delay="0.2s">Android and iOS Compatible</h4>
+                <p class="wow fadeInUp" data-wow-delay="0.3s">Sleek and Elegant Bluetooth Speakers you'll love to carry around.
+                  Order and Get them for a cool price on Amazon today.</p>
+                <div class="btn-buy">
+                  <a href="#"><img class="img-responsive wow fadeIn" data-wow-delay="0.4s" src="{%  static 'assets/images/amazon_logo.png' %}" width="200" alt="Buy" /></a>
+                </div>
+                <div class="price-tag">
+                  <h2 class="wow fadeInUp" data-wow-delay="0.5s">at just $99.98</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img class="img-responsive wow fadeIn" src="{%  static 'assets/images/car22.png' %}" alt="Image Pricing" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Subscribe Form -->
+      <div class="cta-sub no-color">
+        <div class="container">
+          <div class="cta-inner">
+          <h1 class="wow fadeInUp" data-wow-delay="0s">Love offers and discounts? Subscribe and save.</h1>
+            <p class="wow fadeInUp" data-wow-delay="0.2s">
+            Don't worry, we won't need your credit card details. Just enter your <br class="hidden-xs"> email address and we'll take care of the rest.
+            </p>
+          <div class="form wow fadeInUp" data-wow-delay="0.3s">
+            <form class="subscribe-form wow zoomIn" action="assets/php/subscribe.php" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+              <input class="mail" type="email" name="email" placeholder="Join the wait list" autocomplete="off"><input class="submit-button" type="submit" value="Subscribe">
+            </form>
+            <div class="success-message"></div>
+    			  <div class="error-message"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+   <!-- Footer Section -->
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                  <img class="img-circle" src="assets/logos/logo.png" width="80" height="30" alt="Image" />
+                  <p>
+                    A technology startup based somewhere in the world. <br class="hidden-xs"> making the finest bluetooth
+                    speakers ever made. <br class="hidden-xs"> You'll know our location if you really love us.
+                  </p>
+
+                <div class="footer-text">
+                  <p>
+                    Copyright © 2016 Advent Inc. All Rights Reserved.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div id="contact" class="contact text-center">
+                  <i class="ion-ios-chatboxes-outline"></i>
+                  <h1>Need Help ?</h1>
+                  <p>
+                    Contact our 24/7 customer support if you have any <br class="hidden-xs"> questions. We'll help you out.
+                  </p>
+                  <a href="mailto:support@gmail.com">support@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll To Top -->
+
+          <a id="back-top" class="back-to-top page-scroll" href="#main">
+          <i class="ion-ios-arrow-thin-up"></i>
+          </a>
+
+        <!-- Scroll To Top Ends-->
+
+    </div><!-- Main Section -->
+  </div><!-- Wrapper-->
+
+<!-- Jquery and Js Plugins -->
+  <script type="text/javascript" src="{%  static 'assets/js/jquery-2.1.1.js' %}"></script>
+  <script type="text/javascript" src="{%  static 'assets/js/bootstrap.min.js' %}"></script>
+  <script type="text/javascript" src="{%  static 'assets/js/plugins.js' %}"></script>
+  <script type="text/javascript" src="{%  static 'assets/js/menu.js' %}"></script>
+  <script type="text/javascript" src="{%  static 'assets/js/custom.js' %}"></script>
+  </body>
+</html>

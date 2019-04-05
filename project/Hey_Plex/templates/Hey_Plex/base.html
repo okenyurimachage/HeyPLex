@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>HeyPlex Vehicle Rental</title>
+    <link rel="icon" href="{%  static 'assets/images/pic2.png' %}" type="image/png" sizes="16x16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HeyPlex Vehicle Rental">
+    <meta name="keywords" content="HeyPlex Vehicle Rental">
+    <link href="{%  static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{%  static 'assets/css/animate.css' %}"> <!-- Resource style -->
+    <link rel="stylesheet" href="{%  static 'assets/css/owl.carousel.css' %}">
+{#      <link rel="stylesheet" href="{%  static 'mdb/css/mdb.min.css' %}"/>#}
+    <link rel="stylesheet" href="{%  static 'fontawesome/css/fontawesome.min.css' %}"/>
+    <link rel="stylesheet" href="{%  static 'assets/css/owl.theme.css' %}">
+    <link rel="stylesheet" href="{%  static 'assets/css/ionicons.min.css' %}"> <!-- Resource style -->
+    <link href="{% static 'assets/css/style.css ' %}" rel="stylesheet" type="text/css" media="all" />
+{#    <link rel="stylesheet" href="{%  static 'bootstrap/css/bootstrap.min.css' %}"/>#}
+{#    <link rel="stylesheet" href="{%  static 'mdb/css/mdb.min.css' %}"/>#}
+{#    <link rel="stylesheet" href="{%  static 'fontawesome/css/fontawesome.min.css' %}"/>#}
+     <link rel="stylesheet" href="{%  static 'css/style.css' %}"/>
+
+
+</head>
+<body>
+
+<div  class="container-fluid">
+ {% if messages %}
+    {% for message in messages %}
+         <div class="alert alert-info alert-dismissable " style="width: 400px; margin-left: 540px" role="alert">
+             <button class="close" data-dismiss="alert">
+                     <small><sup>x</sup></small>
+              </button>
+             {{ message }}
+         </div>
+    {% endfor %}
+ {% endif %}
+  {% block content %}
+
+{% endblock %}
+</div>
+</body>
+
+<script type="text/javascript" src="{% static 'mdb/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'mdb/js/popper.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'mdb/js/mdb.js' %}"></script>
+<script type="text/javascript" src="{% static 'mdb/js/bootstrap.js' %}"></script>
+<script type="text/javascript" src="{% static 'mdb/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scrollreveal/dist/scrollreveal.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'scrollreveal/dist/scrollreveal.js' %}"></script>
+<script type="text/javascript" src="{% static 'scrollreveal/dist/scrollreveal.es.js' %}"></script>
+<script type="text/javascript" src="{%  static 'assets/js/jquery-2.1.1.js' %}"></script>
+  <script type="text/javascript" src="{%  static 'assets/js/bootstrap.min.js' %}"></script>
+  <script type="text/javascript" src="{%  static 'assets/js/plugins.js' %}"></script>
+  <script type="text/javascript" src="{%  static 'assets/js/menu.js' %}"></script>
+  <script type="text/javascript" src="{%  static 'assets/js/custom.js' %}"></script>
+
+</html>
